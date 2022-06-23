@@ -4,7 +4,8 @@ export const Profiles = styled.div`
   display: grid;
   grid-template-columns: max-content;
   padding: 10px 20px;
-  background-color: #919191;
+  margin-bottom: 30px;
+  background-color: ${props => props.theme.colors.bgMain};
 `;
 
 export const Description = styled.div`
@@ -12,7 +13,7 @@ export const Description = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 30px 10px;
-  background-color: #ffffff;
+  background-color: ${props => props.theme.colors.white};
 `;
 
 export const Avatar = styled.img`
@@ -27,34 +28,34 @@ export const Name = styled.p`
 export const Tag = styled.p`
   margin-bottom: 5px;
   font-size: 18px;
-  color: #96912e;
+  color: ${props => props.theme.colors.textCard};
 `;
 
 export const Location = styled.p`
   font-size: 18px;
-  color: #96912e;
+  color: ${props => props.theme.colors.textCard};
 `;
 
 export const Stats = styled.ul`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   text-align: center;
-  background-color: #eff0f0;
-  border-top: 1px solid #000;
+  background-color: ${props => props.theme.colors.bgStat};
+  border-top: ${props => `1px solid ${props.theme.colors.black}`};
 `;
 
 export const StatsList = styled.li`
   padding: 20px;
 
   :not(:last-child) {
-    border-right: 1px solid #000;
+    border-right: ${props => `1px solid ${props.theme.colors.black}`};
   }
 `;
 
 export const Label = styled.span`
   display: block;
   font-size: 18px;
-  color: #96912e;
+  color: ${props => props.theme.colors.textCard};
 `;
 
 export const Quantity = styled.span`
