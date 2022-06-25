@@ -7,6 +7,7 @@ const randomColor = () => {
 export const StatisticsBox = styled.section`
   width: fit-content;
   text-align: center;
+  margin-bottom: 50px;
   background-color: ${props => props.theme.colors.white};
   border: ${props => `1px solid ${props.theme.colors.black}`};
 `;
