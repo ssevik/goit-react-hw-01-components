@@ -1,8 +1,8 @@
-import { Container } from './common/Container.styled';
-import { Profile } from './profile/Profile';
-import { Statistics } from './components/Statistics/Statistics';
-import { FriendList } from './components/FriendList/FriendList';
-import { TransactionHistory } from './components/TransactionHistory/TransactionHistory';
+import { Container } from 'components/common/Container.styled';
+import { Profile } from 'components/profile/Profile';
+import { Statistics } from 'components/Statistics/Statistics';
+import { FriendList } from 'components/FriendList/FriendList';
+import { TransactionHistory } from 'components/TransactionHistory/TransactionHistory';
 
 import users from '../Data/user.json';
 import data from '../Data/data.json';
