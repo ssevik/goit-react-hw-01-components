@@ -1,7 +1,5 @@
 import styled from '@emotion/styled';
 
-// import { randomColor } from '../../utils/randomColor';
-
 export const StatisticsBox = styled.section`
   width: fit-content;
   text-align: center;
@@ -24,7 +22,7 @@ export const Item = styled.li`
   display: flex;
   flex-direction: column;
   padding: 20px;
-  /* background-color: ${randomColor}; */
+
   color: ${props => props.theme.colors.white};
 `;
 
