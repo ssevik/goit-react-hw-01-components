@@ -1,9 +1,5 @@
 import styled from '@emotion/styled';
 
-const randomColor = () => {
-  return '#' + (0x1000000 + Math.random() * 0xffffff).toString(16).substr(1, 6);
-};
-
 export const StatisticsBox = styled.section`
   width: fit-content;
   text-align: center;
@@ -26,7 +22,7 @@ export const Item = styled.li`
   display: flex;
   flex-direction: column;
   padding: 20px;
-  background-color: ${randomColor};
+  background-color: ${props => props.bgColor};
   color: ${props => props.theme.colors.white};
 `;
 

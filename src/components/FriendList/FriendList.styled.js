@@ -12,10 +12,10 @@ export const Item = styled.li`
   :not(:last-child) {
     margin-bottom: 20px;
   }
+`;
 
-  img {
-    margin-right: 20px;
-  }
+export const AvatarImg = styled.img`
+  margin-right: 20px;
 `;
 
 export const Status = styled.span`
