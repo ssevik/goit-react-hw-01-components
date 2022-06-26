@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { randomColor } from '../../utils/randomColor';
+import { randomColor } from 'utils/randomColor';
 
 export const StatisticsBox = styled.section`
   width: fit-content;
