@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { randomColor } from '../../utils/randomColor';
+// import { randomColor } from '../../utils/randomColor';
 
 export const StatisticsBox = styled.section`
   width: fit-content;
@@ -24,7 +24,7 @@ export const Item = styled.li`
   display: flex;
   flex-direction: column;
   padding: 20px;
-  background-color: ${randomColor};
+  /* background-color: ${randomColor}; */
   color: ${props => props.theme.colors.white};
 `;
 
