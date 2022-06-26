@@ -7,7 +7,6 @@ import {
   Label,
   Percentage,
 } from './Statistics.styled';
-import { randomColor } from '../../utils/randomColor.js';
 
 export const Statistics = ({ title, stats }) => {
   return (
@@ -16,7 +15,7 @@ export const Statistics = ({ title, stats }) => {
 
       <StatList>
         {stats.map(stat => (
-          <Item key={stat.id} bgColor={randomColor}>
+          <Item key={stat.id}>
             <Label>{stat.label}</Label>
             <Percentage>{stat.percentage}%</Percentage>
           </Item>
@@ -28,7 +27,6 @@ export const Statistics = ({ title, stats }) => {
 
 Statistics.propTypes = {
   title: PropTypes.string,
-  randomColor: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
